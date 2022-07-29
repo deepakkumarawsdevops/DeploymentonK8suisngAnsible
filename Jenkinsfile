@@ -19,4 +19,4 @@ stage('Build maven project')
   }
 
   }
-
+}
