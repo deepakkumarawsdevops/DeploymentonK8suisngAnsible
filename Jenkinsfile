@@ -14,9 +14,9 @@ stage('Build maven project')
  steps 
 
   {
-    echo 'building'
-    sh 'mvn package'
-    sh 'mvn install'
+   echo 'building'
+    sh 'mvn -X package'
+    sh 'mvn -X install'
  
   } 
 
