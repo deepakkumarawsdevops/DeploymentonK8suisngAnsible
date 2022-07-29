@@ -1,6 +1,10 @@
 pipeline
 {
 agent {label 'ansible_node_build'}
+environment
+{
+DOCKERHUB_CREDENTIALS = credentials ('docker-hub-login')
+}
 stages
 {
 stage('Build maven project')
@@ -25,6 +29,26 @@ steps
 } 
 
 }
+ stage('docker hub login')
+
+ {
+
+ steps
+ {
+   sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USER --password-stdin'
+
+   
+ }
+  stage('psuh docker image')
+
+ {
+
+ steps
+ {
+   sh 'docker push deepakkumarawsdevops/k83image:01
+
+
+ }
 
 
   }
