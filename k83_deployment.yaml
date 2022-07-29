@@ -19,9 +19,9 @@ spec:
     spec:
       containers:
       - image: deepakkumarawsdevops/k8simage:1
-        name: k8simage
+        name: middy
         ports:
         - containerPort: 8080
-        resources: {}                                     
-  status: {}
+        resources: {}
+   status: {}
 
