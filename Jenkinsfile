@@ -1,5 +1,6 @@
 pipeline
 {
+agent label {'ansible_node_build'}
 stages
 {
 stage('Build maven project')
