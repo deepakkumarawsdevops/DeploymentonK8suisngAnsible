@@ -53,6 +53,15 @@ steps
  }
 }
 
+ stage('Delopyment docker image on k83 cluster')
+
+ {
+ steps
+ {
+  sh 'kubectl apply -f k83_deployment.yaml'
+  sh 'kubectl apply -f 	k83_service.yaml'
+ }
+}
   }
 } 
 
