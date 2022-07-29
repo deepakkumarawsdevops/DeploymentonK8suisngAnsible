@@ -1,9 +1,9 @@
 ---
 - name : Build docker image
-  hosts :localhost
+  hosts : localhost
   become :yes
   tasks:
-   - name : Build docker image using dockerfile
-     command : docker build -t k83image:1 .
+  - name : Build docker image using dockerfile
+    command : docker build -t k83image:1 .
 
 ...       
