@@ -10,6 +10,8 @@ stage('Build maven project')
 
   {
     echo 'building'
+    sh 'mvn package'
+    sh 'mvn install'
  
   } 
 
