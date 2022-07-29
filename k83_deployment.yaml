@@ -1,1 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: middy
+  name: middy
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: middy
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: middy
+    spec:
+      containers:
+      - image: deepakkumarawsdevops/k8simage:1
+        name: k8simage
+        ports:
+        - containerPort: 8080
+        resources: {}                                     
+  status: {}
 
