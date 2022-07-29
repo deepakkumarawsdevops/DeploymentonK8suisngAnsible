@@ -17,6 +17,15 @@ stage('Build maven project')
   } 
 
   }
+ stage('Build Docker image using ansible'
+{
+steps
+{
+ sh 'ansible-playbook ansible_builddockerimage.yml
+} 
+
+}
+
 
   }
 }
