@@ -47,7 +47,7 @@ steps
 
  steps
  {
-   sh 'docker push deepakkumarawsdevops/kubeimage:1'
+   sh 'docker push deepakkumarawsdevops/k83image:1'
 
 
  }
