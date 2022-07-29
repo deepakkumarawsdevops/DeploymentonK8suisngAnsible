@@ -17,7 +17,7 @@ stage('Build maven project')
   } 
 
   }
- stage('Build Docker image using ansible'
+ stage('Build Docker image using ansible')
 {
 steps
 {
