@@ -56,6 +56,7 @@ steps
  stage('Delopyment docker image on k83 cluster')
 
  {
+ agent { label'k83_node' }
  steps
  {
   sh 'kubectl apply -f k83_deployment.yaml'
