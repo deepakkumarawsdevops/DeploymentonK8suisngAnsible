@@ -39,13 +39,13 @@ steps
 
    
  }
-  stage('psuh docker image')
+  stage('push docker image')
 
  {
 
  steps
  {
-   sh 'docker push deepakkumarawsdevops/k83image:01
+   sh 'docker push deepakkumarawsdevops/k83image:1'
 
 
  }
